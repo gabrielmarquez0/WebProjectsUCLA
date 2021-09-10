@@ -1,0 +1,49 @@
+
+alert("This is a Calculator.");
+
+let leftVal = document.getElementById("leftValue");
+let rightVal = document.getElementById("rightValue");
+
+let regex = /-?(\d+[.]?\d*|\d*[.]?\d+)/
+
+function callOperation() {
+	if(document.getElementById("plusOp").checked) {
+	  console.log("plus");
+	  document.getElementById("result").innerHTML = Number(leftVal.value) + Number(rightVal.value);
+	}
+	else if(document.getElementById("minOp").checked) {
+	  console.log("min");
+	  document.getElementById("result").innerHTML = leftVal.value - rightVal.value;
+	}
+	else if(document.getElementById("multOp").checked) {
+	  console.log("mult");
+      document.getElementById("result").innerHTML = leftVal.value * rightVal.value;
+	}
+	else if(document.getElementById("divOp").checked) {
+	  console.log("div");
+	  document.getElementById("result").innerHTML = leftVal.value / rightVal.value;
+	}
+
+}
+
+function validateText(side) {
+  if(side === 0) {leftVal.value = leftVal.value.match(regex)[0];}
+  else if(side === 1) {rightVal.value = rightVal.value.match(regex)[0];}
+}
+
+
+let leftNumIns = document.getElementsByClassName("leftNumInput");
+for(let i = 0; i < leftNumIns.length; i++) {
+  leftNumIns[i].onclick = function() {
+    leftVal.value = leftVal.value + this.innerHTML;
+    validateText(0);
+  }
+}
+
+let rightNumIns = document.getElementsByClassName("rightNumInput");
+for(let i = 0; i < rightNumIns.length; i++) {
+  rightNumIns[i].onclick = function() {
+    rightVal.value = rightVal.value + this.innerHTML;
+    validateText(1);
+  }
+}

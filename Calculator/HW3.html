@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="HW3.css">
+  <script src="HW3.js" defer></script>
+  
+  <title> A (Fairly) Simple Calculator </title>
+
+</head>
+
+<body>
+  <header>
+    <h1> Calculations </h1>
+  </header>
+
+  <main> 
+    <section id="leftInputBox" class="inputBox">
+	  <section id="leftValueDisplayArea" class="valueDisplayArea">
+	    <label for="leftValue"> Second Value:</label>
+	      <input type="text" id="leftValue" class="value" oninput="validateText(0)"> 
+	  </section>
+	  <section id="leftValueInputArea" class="valueInputArea">
+	    <section id="leftRowOne" class="inputRow">
+			<div id="leftOne" class="leftNumInput">1</div>
+			<div id="leftTwo" class="leftNumInput">2</div>
+			<div id="leftThree" class="leftNumInput">3</div>
+		</section>
+		<section id="leftRowTwo" class="inputRow">
+			<div id="leftFour" class="leftNumInput">4</div>
+			<div id="leftFive" class="leftNumInput">5</div>
+			<div id="leftSix" class="leftNumInput">6</div>
+		</section>
+		<section id="leftRowThree" class="inputRow">
+			<div id="leftSeven" class="leftNumInput">7</div>
+			<div id="leftEight" class="leftNumInput">8</div>
+			<div id="leftNine" class="leftNumInput">9</div>
+		</section>
+		<section id="leftRowFour" class="inputRow">
+			<div id="leftDecimal" class="leftNumInput">.</div>
+			<div id="leftZero" class="leftNumInput">0</div>
+			<div id="leftNegative" class="leftNumInput">-</div>
+		</section>
+	  </section>
+	</section>
+	<section id="operators">
+	  <form>
+	    <label for="plusOp">+
+	      <input type="radio" id="plusOp" class="op" name="op" required>
+		</label>
+	      <label for="minOp">-
+		<input type="radio" id="minOp" class="op" name="op" required>
+	      </label>
+	      <label for="multOp">&times 
+		<input type="radio" id="multOp" class="op" name="op" required>
+	      </label>
+	      <label for="divOp">&divide
+		<input type="radio" id="divOp" class="op" name="op" required>
+              </label>
+	  </form>
+	</section>
+	<section id="rightInputBox">
+	  <section id="rightValueDisplayArea" class="valueDisplayArea">
+	    <label for="rightValue"> Second Value:</label>
+	      <input type="text" id="rightValue" class="value" oninput="validateText(1)"> 
+            <input type="button" id="alertUs" value="Compute" onclick="callOperation()">
+	  </section>
+	  <section id="rightValueInputArea" class="valueInputArea">
+	    <section id="rightRowOne" class="inputRow">
+			<div id="rightOne" class="rightNumInput">1</div>
+			<div id="rightTwo" class="rightNumInput">2</div>
+			<div id="rightThree" class="rightNumInput">3</div>
+		</section>
+		<section id="rightRowTwo" class="inputRow">
+			<div id="rightFour" class="rightNumInput">4</div>
+			<div id="rightFive" class="rightNumInput">5</div>
+			<div id="rightSix" class="rightNumInput">6</div>
+		</section>
+		<section id="rightRowThree" class="inputRow">
+			<div id="rightSeven" class="rightNumInput">7</div>
+			<div id="rightEight" class="rightNumInput">8</div>
+			<div id="rightNine" class="rightNumInput">9</div>
+		</section>
+		<section id="rightRowFour" class="inputRow">
+			<div id="rightDecimal" class="rightNumInput">.</div>
+			<div id="rightZero" class="rightNumInput">0</div>
+			<div id="rightNegative" class="rightNumInput">-</div>
+		</section>
+	  </section>
+	</section>
+        <span> Result is: </span>
+        <span id="result"> </span>
+  </main>
+
+</body>

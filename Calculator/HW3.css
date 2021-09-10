@@ -1,0 +1,33 @@
+main > section {
+	display: inline-block;
+	border: 2px solid grey;
+        padding: 10px;
+	width: auto;
+}
+
+.inputRow {
+	display: block;
+}
+
+.leftNumInput, .rightNumInput {
+	display: inline-block;
+	background-color: rgb(205,205,205);
+    border: 1px solid grey;
+    width: 18px;
+    height: 18px;	
+	text-align: center;
+	margin: 4px;
+}
+  .leftNumInput:active, .rightNumInput:active {
+	  background-color: rgb(165,165,165);
+  }
+
+form > label {
+	display: block;
+	margin: 10px;
+}
+
+
+#operators {
+	
+}

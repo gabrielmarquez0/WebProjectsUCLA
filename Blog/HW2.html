@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="HW2.css">
+  <title> Blog 2 </title>
+</head>
+
+<body>
+  <header>
+    <h1>  They're Pretty Cute, Aren't They? </h1>
+  </header>
+
+  <main>
+    <section id="contentWrapper">
+    <section id="viewingContent">
+      <section id="table" class="mainContent">
+        <table>
+          <thead>
+            <tr>
+              <th> Animal </th> <th> Locale </th> <th> Life Expectancy </th> <th> Cuteness </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th> Cat </th> <td> Everywhere </td> <td> 12-17yrs </td> <td> 10.1 / 10 </td>
+            </tr>
+            <tr>
+              <th> Tanuki </th> <td> Japan, I think </td> <td> 3-5yrs </td> <td> 10 / 10 </td>
+            </tr>
+            <tr>
+              <th> Turtle </th> <td> The Ocean </td> <td> 1-? yrs </td> <td> 9.9 / 10 </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="images" class="mainContent">
+        <img id="kitten" src="kitten.jpeg" alt="A kitten on its back" width=300>
+	<span id="kitCap" class="caption">
+          A pretty playful kitten
+        </span>
+	<img id="tanuki" src="tanuki.jpeg" alt="A tanuki tilting its head" width=300>
+	<span id="tanCap" class="caption">
+          A quietly curious tanuki
+        </span>
+        <img id="turtle" src="turtle.jpeg" alt="A baby sea turtle floating" width=300>
+        <span id="turCap" class="caption">
+          A bobbing baby turtle
+        </span>
+      </section>
+ 
+      <section id="text" class="mainContent">
+        <p>
+    	  Cute stuff. That's what we've got on the agenda today, and it won't be just your  
+	  average, everyday, run-of-the-mill, your-coworker-has-a-new-baby-and-you're-legally-obligated- 
+	  to-make-oohs-and-ahs cute stuff. We're talking about the really cute stuff. Not just
+	  babies. Not just animals. But Baby. Animals. 
+        </p>
+        <p>
+	  Now, our goal here is to crown a king (or queen or gender non-conforming ruler). 
+	  We're looking for the Supreme Overlord of Saccharine, the Sultan of Sweet, the Leader of
+	  Little-Itsy-Bitsy-Cutesiness. So we're going to be stacking up a few of our contenders  
+	  against each other in order to determine which baby animal reigns in this land, the   
+	  United States of Americute. And to be honest, we've cut some animals out that normally
+	  perform pretty well in contests like this. No puppies (which means no baby pugs), no  
+	  birds, no pandas, no goldfish (and if we're being blunt, they really only get by on memories 
+	  anyway). No nothing but the following three. 
+        </p>
+        <p>
+	  We have kittens, turtles, and tanukis. And I know what you're thinking - how could I leave in
+          kittens when I was willing to cut puppies? There are no wobbling baby horses, but we get a 
+          playful fuzzy creature that can't even get off its back? Surely that must be unfair? And to 
+          that I say - Yes. Yes it is. But I like kittens so they're staying on the list. Sue me. 
+          But in the meantime, appreciate the beauty that is kitten kind in the image stack to the right
+          and then see if any of those questions matter more than seeing those little paws in the air.
+        </p>
+        <p>
+	  All right. Now that we've sorted out our kitten controversy, you've got to be wondering, "what's a
+          tanuki?" Probably. For all I know, you're a past master in tanuki talk, but I learned about them
+          two days ago so I'm on a bit of high. And why did I add a turtle out of all the other existing
+          fauna in this world? (Or flora in this world. I guess I never thought about cute plants. Huh.) 
+	  Well, tanuki and turtle both start with 'T', and I'm a simple man. It seemed okay. 
+        </p>
+        <p>
+          Also, as you ought to have realized by now with your eyes even if you haven't noticed the table
+          we've got going on up and to the left or the way that I was describing kittens to start, we do 
+          indeed have a winner. Anticlimactic, sure, but with a contest like this, there really wasn't much
+          chance from the start. I mean, tanukis do have interesting history. And they're certainly very cool
+          to look at. And sea turtles did have that role in <i>Finding Nemo</i>. But we knew who was coming
+          out on top in this competition from the top of this page. We knew it before we started reading. 
+          We knew it before I decided this blog would be kinda fun if I wrote it about cute stuff. It's kittens.
+          Of course. And can you blame me?
+        </p>
+      </section>
+    </section>
+    </section>
+    
+   
+    <form id="interactiveContent">
+      <fieldset id="favoriteAnimal">
+        <legend>
+          Stay In Touch!
+        </legend>
+        <p>
+          Which animal was your favorite? <br>
+          <label for="kitRad"> Kitten </label>
+          <input type="radio" id="kitRad" value="kitten" name="animal" required>
+          <label for="turRad"> Turtle </label>
+          <input type="radio" id="turRad" value="turtle" name="animal" required>
+          <label for="tanRad"> Tanuki </label>
+          <input type="radio" id="tanRad" value="tanukis" name="animal" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <label for="name"> Enter name: </label>
+        <input type="text" id="name" pattern="[A-Z].*">
+        <br>
+        <label for="email"> Enter email: </label>
+        <input type="text" id="email" pattern=".*@.*(edu|com)">
+        <br>
+        <textArea name="comment" rows=8> </textArea>
+      </fieldset>
+
+      <fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </fieldset>
+    </form>
+
+  </main>
+
+
+</body>
